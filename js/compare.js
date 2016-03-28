@@ -122,7 +122,7 @@ function machineImageToRender(queryStringList, csvObjectData) {
     var machineImage =  csvObjectData[machineId][MACHINE_IMAGE_INDEX];
 
     stringToRender = stringToRender // append the dom to be rendered to existing stringToRender
-    + '<div class="col-xs-4 compare-machine-item"><div class="compare-machine-item-bgnd">'
+    + '<div class="col-xs-3 compare-machine-item"><div class="compare-machine-item-bgnd">'
       + '<div class="compare-machine-name first-machine text-center">' + machineName + '</div>'
       + '<img src="img/wb-img/wb-thumbnails/' + machineImage + '" class="img-responsive">'
     + '</div></div>'
@@ -473,7 +473,7 @@ function machineFieldRow(machineField, machineInfoList) {
   stringToRender += '<div class="row">';
   stringToRender += '<div class="col-xs-3 machine-info-highlight"><b>' + machineField + '</b></div>';
   for (var i=0; i<machineInfoList.length; i++) {
-    stringToRender += '<div class="col-xs-4 text-center" ><div class="machine-info-item-highlight-bgnd"><div class="machine-info-item-highlight">' + machineInfoList[i] + '</div></div></div>'
+    stringToRender += '<div class="col-xs-3 machine-info-item-container text-center" ><div class="machine-info-item-highlight-bgnd"><div class="machine-info-item-highlight">' + machineInfoList[i] + '</div></div></div>'
   }
   stringToRender += '</div>';
 
