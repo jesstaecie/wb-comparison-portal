@@ -20,11 +20,12 @@ body {
 #footer {
 	font-family: Arial;
 	background-color:#999;
+	color: #000000;
 	min-width: 1024px;
 	text-align:center;
 	padding: 0.5px;
 
-	height: 40px;
+	height: 80px;
 	line-height: 40px;
 	white-space: nowrap;
 }
@@ -57,7 +58,7 @@ a:hover .compare-text:hover {
 .index-container {
 	position: relative;
 	width: auto;
-	margin-bottom: 532px;
+	margin-bottom: 590px;
 }
 
 .content h1 {
@@ -149,6 +150,10 @@ a:hover .compare-text:hover {
 	background-color: white;
 }
 
+.white-bgnd {
+
+}
+
 .select-machine-item {
 	margin-bottom: 50px;
 }
@@ -176,6 +181,7 @@ a:hover .compare-text:hover {
 .select-breadcrumbs {
 	background-color: #999999 !important;
 	margin-bottom: 10px;
+	
 }
 
 .breadcrumbs-text {
@@ -188,7 +194,7 @@ a:hover .compare-text:hover {
 .sidebar-container ul li {
 	background-color: #aa312c;
 	padding: 7px 10px;
-	width: 155px;
+	width: 200px;
 	margin: 5px 0px 5px 10px !important;
 	color: white;
 	font-weight: bold;
@@ -217,20 +223,24 @@ a:hover .compare-text:hover {
 }
 
 .compare-container {
-	width: 80%;
+	/*width: 100%;*/
+	max-width: 960px;
+	/*margin: -20px 400px;*/
 	margin: 0 auto;
+	
 }
 
 .comparison-wrapper {
 	padding: 6px;
-	/*width:80%;*/
+	max-width:960px;
 	background-color: white;
 }
 
 .compare-breadcrumbs {
 	background-color: #999999 !important;
 	margin-bottom: 10px;
-	margin-top: 100px;
+	margin-top: 20px;
+	width: 960px;
 }
 
 .machine-to-compare {
@@ -241,6 +251,7 @@ a:hover .compare-text:hover {
 .machine-info-item-highlight {
 	width: 250px;
 	background-color: #f1f1f1;
+	padding: 0px 10px 0px 10px;
 }
 
 
@@ -283,12 +294,14 @@ a:hover .compare-text:hover {
 	width: 250px ;
 	border: none !important;
 	padding-bottom: 40px; 
+	/*padding: 0px 10px 40px 10px;*/
 }
 
 .machine-info-item-highlight-bgnd {
 	width: 250px;
 	background-color: #f1f1f1;
 	height: 60px;
+
 }
 
 /*.compare-machine-item > div {
@@ -302,6 +315,11 @@ a:hover .compare-text:hover {
 	min-width: 250px;
 }
 
+/*This is to adjust the machine thumbnail margin in compare.html*/
+.compare-machine-item {
+	margin-right: 100px;
+	margin-left: -20px;
+}
 .compare-machine-name {
 	background-color: #999999;
 	padding: 20px 0;
@@ -316,16 +334,23 @@ a:hover .compare-text:hover {
 	margin-bottom: 40px;
 }
 
+/*This is to adjust the machine-info-item row margin in compare.html*/
+.machine-info-item-container {
+	margin-right: 100px;
+	margin-left: -20px;
+}
+
 .datainfo-container {
 	width: !important;
 }
 
 /*.category-field-name-container {
-	margin-left: 200px !important;
-}
+	position: absolute;
 
-.compare-machine-item-outer-container {
-	height: 50px;
 }*/
 
+/*.compare-machine-item-outer-container {
+	height: 50px;
+}
+*/
 
