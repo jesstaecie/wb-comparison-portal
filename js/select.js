@@ -46,10 +46,10 @@ $(function () {
 					} else { // add
 						if (firstMachineItemId == undefined && machineId != secondMachineItemId) { // first container is empty
 							firstMachineItemId = machineId;
-							$selectMachineItemSelect.attr("src", "img/green.png");
+							$selectMachineItemSelect.attr("src", "img/black.png");
 						} else if (secondMachineItemId == undefined && machineId != firstMachineItemId) {
 							secondMachineItemId = machineId;
-							$selectMachineItemSelect.attr("src", "img/green.png");
+							$selectMachineItemSelect.attr("src", "img/black.png");
 						}
 
 					}
