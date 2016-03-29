@@ -1,10 +1,11 @@
 /* common */
 body {
 	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	min-height: 100vh;
+	background-repeat: repeat;
+	/*background-position: center;*/
+	min-height: 100%;
 	min-width: 1024px;
+	/*height: auto;*/
 }
 
 #header {
@@ -21,13 +22,15 @@ body {
 	font-family: Arial;
 	background-color:#999;
 	color: #000000;
-	min-width: 1024px;
+	/*min-width: 1024px;*/
+	min-width: 960px;
 	text-align:center;
 	padding: 0.5px;
+	position: relative;
 
 	height: 80px;
 	line-height: 40px;
-	white-space: nowrap;
+	/*white-space: nowrap;*/
 }
 
 a:link {
@@ -52,13 +55,23 @@ a:hover .compare-text:hover {
 /*index*/
 
 #index-body {
-	background-image: url("../img/homepageBg.jpg");
+	/*background-image: url("../img/homepageBg.jpg");*/
+	background-image: url("../img/pageBg.jpg");
+	width: 100%;
 }
 
 .index-container {
-	position: relative;
-	width: auto;
-	margin-bottom: 590px;
+	/*position: relative;*/
+	/*width: 100%;*/
+	max-width: 960px;
+	/*margin-bottom: 590px;*/
+	margin: 0 auto auto auto;
+	height: auto;
+}
+
+
+.index-machineimage-bgnd {
+
 }
 
 .content h1 {
@@ -83,7 +96,7 @@ a:hover .compare-text:hover {
 
 
 .compare {
-	margin-bottom: 300px;
+	margin-bottom: 100px;
 }
 
 .machinebg {
@@ -97,6 +110,11 @@ a:hover .compare-text:hover {
 
 #select-body {
 	background-image: url("../img/pageBg.jpg");
+}
+
+.select-container {
+	max-width: 960px;
+	margin: 0 auto;
 }
 
 .buttons {
@@ -148,14 +166,17 @@ a:hover .compare-text:hover {
 .select-machines-wrapper {
 	padding-top: 6px;
 	background-color: white;
+	max-width: 960px;
 }
 
-.white-bgnd {
-
+.row.white-bgnd {
+	max-width: 960px;
 }
 
 .select-machine-item {
-	margin-bottom: 50px;
+	/*margin-bottom: 50px;*/
+	margin: 0 auto 50px auto;
+	padding: 0px 20px !important;
 }
 
 .select-machine-item > div {
@@ -189,7 +210,16 @@ a:hover .compare-text:hover {
 	color: white;
 }
 
+.machine-items-container {
+	width: 960px !important;
+	margin: auto;
+	position: absolute;
+}
+
 /*compare*/
+#compare-body {
+	background-image: url("../img/pageBg.jpg");
+}
 
 .sidebar-container ul li {
 	background-color: #aa312c;
@@ -218,10 +248,6 @@ a:hover .compare-text:hover {
 	background-color: #999999;
 }
 
-#compare-body {
-	background-image: url("../img/pageBg.jpg");
-}
-
 .compare-container {
 	/*width: 100%;*/
 	max-width: 960px;
@@ -234,12 +260,13 @@ a:hover .compare-text:hover {
 	padding: 6px;
 	max-width:960px;
 	background-color: white;
+	height: auto;
 }
 
 .compare-breadcrumbs {
 	background-color: #999999 !important;
 	margin-bottom: 10px;
-	margin-top: 20px;
+	margin-top: 30px;
 	width: 960px;
 }
 
@@ -340,10 +367,10 @@ a:hover .compare-text:hover {
 	margin-left: -20px;
 }
 
-.datainfo-container {
+/*.datainfo-container {
 	width: !important;
 }
-
+*/
 /*.category-field-name-container {
 	position: absolute;
 
