@@ -33,6 +33,7 @@ $(function () {
 					$(".select-machine-item-image, .select-machine-item .machine-greybox").click(function() {
 					var $selectMachineItemSelect = $(this).parents('.select-machine-item').find('.select-machine-item-select');
 
+
 					var machineId = $selectMachineItemSelect.data("machine-id");
 
 					if (machineId == firstMachineItemId || machineId == secondMachineItemId) { // remove
@@ -52,7 +53,8 @@ $(function () {
 							$selectMachineItemSelect.attr("src", "img/black.png");
 						}
 
-					}
+					} 
+					console.log (".select-machine-item-select[data-machine-id="+secondMachineItemId+"]");
 
 					if (firstMachineItemId != undefined && secondMachineItemId != undefined) { // full
 						$(".select-machine-item-select")
@@ -61,6 +63,8 @@ $(function () {
 						.attr("src", "img/faded.png");
 
 						$selectMachineItemSelect.parents(".select-machine-item").find(".compare-product").visible();
+						$(".select-machine-item-image, .select-machine-item .machine-greybox").unbind("click");
+
 					} else { // not full
 						$(".select-machine-item-select")
 						.not(".select-machine-item-select[data-machine-id="+firstMachineItemId+"]") //will select either one with id
