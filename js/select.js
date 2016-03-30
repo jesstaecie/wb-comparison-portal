@@ -53,8 +53,7 @@ $(function () {
 							$selectMachineItemSelect.attr("src", "img/black.png");
 						}
 
-					} 
-					console.log (".select-machine-item-select[data-machine-id="+secondMachineItemId+"]");
+					}
 
 					if (firstMachineItemId != undefined && secondMachineItemId != undefined) { // full
 						$(".select-machine-item-select")
@@ -62,8 +61,15 @@ $(function () {
 						.not(".select-machine-item-select[data-machine-id="+secondMachineItemId+"]")
 						.attr("src", "img/faded.png");
 
-						$selectMachineItemSelect.parents(".select-machine-item").find(".compare-product").visible();
-						$(".select-machine-item-image, .select-machine-item .machine-greybox").unbind("click");
+            // This will find all compare product buttons that are visible
+            var $compareProductThatIsVisible = $(".compare-product").filter(function() {
+              return this.style.visibility == 'visible';
+            });
+
+            // Only when there is no button that is visible, then show a compare product button
+            if ($compareProductThatIsVisible.length == 0) {
+              $selectMachineItemSelect.parents(".select-machine-item").find(".compare-product").visible();
+            }
 
 					} else { // not full
 						$(".select-machine-item-select")
