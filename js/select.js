@@ -7,7 +7,7 @@ jQuery.fn.invisible = function() {
 };
 
 $(function () {
-		$.get("machinelist.csv", function(csvString) {
+		$.get("machinelist.txt", function(csvString) {
 				// Append DOM from csv to #machine-items-container
 				var csvObject = Papa.parse(csvString);
 				var title = csvObject.data[0];
