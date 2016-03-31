@@ -304,11 +304,15 @@ a:hover .compare-text:hover {
 	background-color: #999999;
 }
 
+
 .compare-container {
 	/*width: 100%;*/
 	max-width: 960px;
 	/*margin: -20px 400px;*/
 	margin: 0 auto;	
+	height: auto;
+
+
 }
 
 .comparison-wrapper {
@@ -316,6 +320,7 @@ a:hover .compare-text:hover {
 	max-width:960px;
 	background-color: white;
 	height: auto;
+	padding-bottom: 50px;
 }
 
 .compare-breadcrumbs {
@@ -333,12 +338,14 @@ a:hover .compare-text:hover {
 .machine-info-item-highlight {
 	width: 250px;
 	background-color: #f1f1f1;
+	/*padding: 10px;*/
 	padding: 0px 10px 0px 10px;
 }
 
 
 .machine-info-highlight {
 	padding: 0px !important;
+	
 }
 /* start of on hover row hightlight logic */
 
@@ -382,9 +389,9 @@ a:hover .compare-text:hover {
 .machine-info-item-highlight-bgnd {
 	width: 250px;
 	background-color: #f1f1f1;
-	height: 60px;
-
+	min-height: 80px;
 }
+
 
 /*.compare-machine-item > div {
 	width: 250px;
@@ -409,17 +416,18 @@ a:hover .compare-text:hover {
 }
 
 .sidebar-container {
-	margin-bottom: 40px;
+	margin-bottom: 6ssss0px;
 }
 
 .machine-info-container {
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 }
 
 /*This is to adjust the machine-info-item row margin in compare.html*/
 .machine-info-item-container {
 	margin-right: 100px;
 	margin-left: -20px;
+	height: auto;
 }
 
 /*.datainfo-container {
