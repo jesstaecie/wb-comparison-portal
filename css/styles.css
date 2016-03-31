@@ -1,11 +1,27 @@
+@charset "utf-8";
+
+/*html {
+  background: no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
 /* common */
 body {
-	background-size: cover;
-	background-repeat: repeat;
+	
+	/*background-size: cover;
+	background-repeat: repeat-y;*/
+	/*background-repeat: repeat-x;
+	background-repeat: repeat;*/
 	/*background-position: center;*/
-	min-height: 100%;
+	/*min-height: 100%;*/
+	height: 100%;
+	width: 100%;
 	min-width: 1024px;
+
 	/*height: auto;*/
+
 }
 
 #header {
@@ -18,21 +34,48 @@ body {
 	margin-right: 10px;
 }
 
+.clearfooter {
+    height: 80px;
+	clear:both;
+
+}
+
 #footer {
 	font-family: Arial;
 	background-color:#999;
 	color: #000000;
-	/*min-width: 1024px;*/
-	min-width: 960px;
+	width: 100%;	
+	/*float: left;*/
+	margin-top: 75px;
+	bottom: 0;
 	text-align:center;
 	padding: 0.5px;
 	position: relative;
-
 	height: 80px;
 	line-height: 40px;
-	/*white-space: nowrap;*/
+	clear: both;
 }
 
+/*#footernew {
+    height:80px;
+    background-color: #999999;
+    float: left;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 70px;
+    clear:both;
+}
+
+#footernew .footerbottom p, #footernew .footerbottom p a  {
+	text-align: center;
+	color: #000;
+	text-decoration: none;
+	padding-top:15px;
+
+
+}
+*/
 a:link {
 	color: white;
 	text-decoration:none;
@@ -55,8 +98,8 @@ a:hover .compare-text:hover {
 /*index*/
 
 #index-body {
-	/*background-image: url("../img/homepageBg.jpg");*/
 	background-image: url("../img/pageBg.jpg");
+	/*background-color:#dedfe1;*/
 	width: 100%;
 }
 
@@ -64,9 +107,9 @@ a:hover .compare-text:hover {
 	/*position: relative;*/
 	/*width: 100%;*/
 	max-width: 960px;
-	/*margin-bottom: 590px;*/
-	margin: 0 auto auto auto;
-	height: auto;
+	/*margin: 0 auto auto auto;*/
+	height: 100%;
+	margin: 0 auto;
 }
 
 
@@ -121,6 +164,7 @@ a:hover .compare-text:hover {
 	background-color: white;
 	width: 100%;
 	height: 50px;
+	/*margin: 0;*/
 
 
 }
@@ -130,6 +174,7 @@ a:hover .compare-text:hover {
 	display: block;
 	float: left;
 	margin-top:5px;
+
 
 
 }
@@ -164,9 +209,13 @@ a:hover .compare-text:hover {
 }
 
 .select-machines-wrapper {
-	padding-top: 6px;
+	/*padding-top: 6px;*/
 	background-color: white;
+	/*max-width: 960px;*/
+	/*min-width: 870px;*/
 	max-width: 960px;
+	/*height: auto;*/
+	margin: 0 auto;
 }
 
 .row.white-bgnd {
@@ -174,13 +223,17 @@ a:hover .compare-text:hover {
 }
 
 .select-machine-item {
-	/*margin-bottom: 50px;*/
 	margin: 0 auto 50px auto;
-	padding: 0px 20px !important;
+	/*padding: 0px 5px !important;*/
+	
+}
+
+.selection-thumbnails {
+	padding: 0 5px !important;
 }
 
 .select-machine-item > div {
-	width: 250px;
+	width: 210px;
 	cursor: pointer;
 }
 
@@ -194,9 +247,10 @@ a:hover .compare-text:hover {
 }
 
 .machine-greybox {
-	padding: 10px;
+	padding: 8px;
 	background-color: rgba(0,0,0,0.5);
 	font-weight: bold;
+	font-size: 14px;
 }
 
 .select-breadcrumbs {
@@ -211,9 +265,11 @@ a:hover .compare-text:hover {
 }
 
 .machine-items-container {
-	width: 960px !important;
-	margin: auto;
-	position: absolute;
+	/*width: 960px !important;*/
+	max-width: 960px;
+	margin:0 auto;
+	width: 100%;
+	/*position: absolute;*/
 }
 
 /*compare*/
@@ -252,12 +308,11 @@ a:hover .compare-text:hover {
 	/*width: 100%;*/
 	max-width: 960px;
 	/*margin: -20px 400px;*/
-	margin: 0 auto;
-	
+	margin: 0 auto;	
 }
 
 .comparison-wrapper {
-	padding: 6px;
+	/*padding: 6px;*/
 	max-width:960px;
 	background-color: white;
 	height: auto;
