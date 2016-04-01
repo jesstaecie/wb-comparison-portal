@@ -127,7 +127,6 @@ a:hover .compare-text:hover {
 
 .compare-text {
 	padding: 0px;
-	border: 1px #aa312c solid;
 	border-radius: 20px;
 	background-color: #aa312c;
 	width: 200px;
@@ -137,6 +136,15 @@ a:hover .compare-text:hover {
 	margin: auto;
 }
 
+.compare-text:hover {
+	background-color: #999999;
+	-webkit-transition: all 100ms ease-out;
+	-moz-transition: all 100ms ease-out;
+	-o-transition: all 300ms ease-out;
+	-ms-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+
+}
 
 .compare {
 	margin-bottom: 100px;
@@ -251,6 +259,16 @@ a:hover .compare-text:hover {
 	background-color: rgba(0,0,0,0.5);
 	font-weight: bold;
 	font-size: 14px;
+}
+
+.select-machine-item:hover .machine-greybox {
+	background-color: #aa312c;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	-ms-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+	
 }
 
 .select-breadcrumbs {
