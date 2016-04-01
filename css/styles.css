@@ -434,9 +434,9 @@ a:hover .compare-text:hover {
 	cursor: pointer;
 }
 
-/*.compare-machine-name:hover {
-	cursor: pointer;
-}*/
+.compare-machine-name:hover a {
+	color: #000000 !important;
+}
 
 .sidebar-container {
 	margin-bottom: 60px;
