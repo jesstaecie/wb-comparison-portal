@@ -280,8 +280,8 @@ a:hover .compare-text:hover {
 .sidebar-container ul li {
 	background-color: #aa312c;
 	padding: 7px 10px;
-	width: 200px;
-	margin: 5px 0px 5px 10px !important;
+	width: 190px;
+	margin: 5px 0px 5px 20px !important;
 	color: white;
 	font-weight: bold;
 	list-style: none;
@@ -406,17 +406,22 @@ a:hover .compare-text:hover {
 
 /*This is to adjust the machine thumbnail margin in compare.html*/
 .compare-machine-item {
-	margin-right: 100px;
+	margin-right: 110px;
 	margin-left: -20px;
 }
 .compare-machine-name {
 	background-color: #999999;
 	padding: 20px 0;
-	font-weight: bold
+	font-weight: bold;
+	cursor: pointer;
 }
 
+/*.compare-machine-name:hover {
+	cursor: pointer;
+}*/
+
 .sidebar-container {
-	margin-bottom: 6ssss0px;
+	margin-bottom: 60px;
 }
 
 .machine-info-container {
@@ -425,7 +430,7 @@ a:hover .compare-text:hover {
 
 /*This is to adjust the machine-info-item row margin in compare.html*/
 .machine-info-item-container {
-	margin-right: 100px;
+	margin-right: 110px;
 	margin-left: -20px;
 	height: auto;
 }
