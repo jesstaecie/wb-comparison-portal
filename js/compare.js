@@ -76,7 +76,7 @@ $(function () {
       var firstMachineId = queryStringList[0];
       var secondMachineId = queryStringList[1];
 
-      $.get("machinelist.csv", function(csvString) {
+      $.get("machinelist.txt", function(csvString) {
         var csvObject = Papa.parse(csvString);
 
         // Add machine image and name header to compare into machine-image-container
