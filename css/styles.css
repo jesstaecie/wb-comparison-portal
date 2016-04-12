@@ -36,7 +36,14 @@
 
 #homelogo {
 	/*margin-top: 7px;*/
-	margin: 7px 0px 0px 5px;
+	margin: 7px 0px 0px 20px;
+}
+
+.back-to-techlib {
+	margin: 20px 0px 0px 60px;
+	color: #FFFFFF;
+	width: 250px;
+	padding-top: 15px;
 }
 
 .clearfooter {
