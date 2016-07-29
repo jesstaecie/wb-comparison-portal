@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<!-- <meta name="viewport" content="width=768"> -->
+	<meta name="viewport" content="width=1024">
+
+	<title>WB Machine Comparison app</title>
+	<link rel="shortcut icon" href="./img/asm logo.ico">
+
+	<link rel="stylesheet" type="text/css" href="css/select_content_styles.css">
+	<!-- Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/jquery-2.2.0.js"></script>
+	<!-- <script src="http://code.jquery.com/jquery-1.9.1.js"></script> -->
+	<script src="js/common-includes.js"></script>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/papaparse.js"></script>
+
+	<script src="js/store.js"></script>  
+	<script src="js/select_dropdownnew.js"></script>
+	<script src="js/select_addmachineBox.js"></script>
+</head>
+
+<body>
+	<div id="container">
+
+		<div class="width">
+			<div class="select-breadcrumbs">
+				<div class="breadcrumbs-text">
+					<a href="../index.html" style="color:white"> Home / </a>
+					<b> Wire Bonder Comparison </b>
+				</div>
+			</div>
+		
+			<div class="selectContainer">
+				<div id="thumbnailContainer">
+
+					<div class="thumbnail" id="thumbnail0">
+						<div class="machineBox" id="machineBox0">
+							<div id="machineEmpty">
+							<img src="img/add-machine-01.png" width="300" height="300">
+		 					</div>
+		 				</div>
+
+		 				<div class="dropdown" id="dropdown0">
+		 					<select class="machine-type-select" data-id="0">
+		 						<option value="type"> Type</option>
+		 						<option value="IC"> IC</option>
+		 						<option value="OPTO"> OPTO</option>
+		 					</select>
+
+		 					<select class="machine-select" id="machine-select0" data-id="0">
+		 						<option value="machine">Machine </option>
+		 					</select>
+		 				</div>
+					</div>	
+
+						<div class="thumbnail" id="thumbnail1">
+						<div class="machineBox" id="machineBox1">
+							<div id="machineEmpty">
+							<img src="img/add-machine-01.png" width="300" height="300">
+		 					</div>
+		 				</div>
+
+		 				<div class="dropdown" id="dropdown1">
+		 					<select class="machine-type-select" data-id="1">
+		 						<option value="type"> Type</option>
+		 						<option value="IC"> IC</option>
+		 						<option value="OPTO"> OPTO</option>
+		 					</select>
+
+		 					<select class="machine-select" id="machine-select1" data-id="1">
+		 						<option value="machine"> Machine </option>
+		 					</select>
+		 				</div>
+					</div>	
+
+	       		</div><!-- end of .thumbnailContainer --> 
+
+	       	</div>
+
+	       	 <div class="generateButton">
+            	<!-- <a href="compare.html">Click to Compare</a> -->
+            	<a> Click to Compare </a>
+            </div>  
+
+            <div class="errorBox" style="display:none;"> *You cannot select two of the same machine. Please select again.</div>
+
+
+       	</div> <!-- end of width-->
+	</div>
+</body>
+
+	</html>
